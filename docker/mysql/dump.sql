@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  `name` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `users` VALUES (1, 'User1'), (2, 'User2');
+
+ALTER TABLE `users` AUTO_INCREMENT=3;
